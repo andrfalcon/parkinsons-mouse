@@ -1,3 +1,8 @@
 from pynput.mouse import Button, Controller
 
-print("test, test")
+appIsOpen = True
+mouse = Controller()
+
+# Read the pointer position
+while appIsOpen:
+    print('The current pointer position is {0}'.format(mouse.position))
